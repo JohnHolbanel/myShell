@@ -1,6 +1,6 @@
 # Use python3 to run this code
 # Student Name: John Laurentiu Holbanel
-# Student ID: 17393851
+
 
 import os
 import getpass
