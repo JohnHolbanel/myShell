@@ -1,0 +1,102 @@
+#Student Name: John Laurentiu Holbanel
+
+------------------------------------------------------------------------------
+NAME
+
+myShell - a shell with file name completion and command line editing
+------------------------------------------------------------------------------
+DESCRIPTION
+
+myShell is a python based programme thats works similar to a command line 
+interpreter. It works as a means of interacting with a computer program. This
+is done my issuing commands to the program.
+
+------------------------------------------------------------------------------
+HOW TO USE
+
+path/myShell -> [command] *[argument]
+
+command - Instructions executed by the user. List of commands given below for
+user to use.
+
+argument - A value that is passed between programs. Some commands require an 
+argument to execute.
+
+------------------------------------------------------------------------------
+BUILT IN COMMANDS
+
+-dir [directory]
+
+Lists the contents of the current directory. If an argument is given then it 
+lists the contents of the arguement's directory.
+
+-cd [directory]
+
+Reports current working directory. If an arguement is given then it changes
+directory to the argument.
+
+-clr
+
+Clears the screen. Does not clear any previous commands.
+
+-environ
+
+Lists all of the environment strings.
+
+-echo [comment]
+
+Prints out the comment onto the screen
+
+-help
+
+Displays the user manual.
+
+-pause
+
+Puts the shell on hold. Waits for user to inut enter
+
+-quit
+
+Quits out of the shell
+
+------------------------------------------------------------------------------
+NON BUILT IN COMMANDS
+
+Commands that are not built in are interpreted as program invocation. It will 
+be run as a child process.
+
+------------------------------------------------------------------------------
+OUTPUT REDIRECTION
+
+Directing input and output to files and devices other than the default I/O
+devices.
+
+The command line input:
+
+-> python3 programname [arg1] [arg2] > [outputfile]
+
+This runs programname that can also take in arg1 and arg2. Everything that
+usually prints out into the terminal will now be put into the outputfile. If
+the outputfile does not exist then it will create a new file. If the
+outfile does exist then the contents within the file are overwritten
+
+if ">>" is given instead of ">" then it works exactly like above the
+command but instead it will append to the outputfile not overwriting it.
+
+------------------------------------------------------------------------------
+BACKGROUND EXECUTIONS
+
+With an "&" at the end of the command line means that the process starts in 
+the background, so you can continue to use the shell and do not have to wait 
+for the script to finish.
+
+------------------------------------------------------------------------------
+BATCHFILE PROCESSING
+
+-> python3 myshell.py [batchfile]
+
+Launching myShell alongside an argument will execute batchfile proccessing.
+The batchfile must be a ".txt" file and contain commands for the shell to
+execute. Once all commands are executed it will exit out of the shell. 
+
+------------------------------------------------------------------------------
